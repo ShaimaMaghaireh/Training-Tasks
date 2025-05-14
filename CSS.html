@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Concepts Example</title>
+  <style>
+    /* 1. CSS Syntax and Selectors */
+    p {
+      color: blue;
+    }
+
+    /* 2. Colors and Units */
+    .color-units {
+      color: #ff0000;
+      width: 50%;
+      padding: 1em;
+      font-size: 1.5rem;
+    }
+
+    /* 3. Box Model */
+    .box-model {
+      margin: 20px;
+      border: 2px solid black;
+      padding: 10px;
+      width: 200px;
+    }
+
+    /* 4. Positioning */
+    .relative-box {
+      position: relative;
+      top: 10px;
+      left: 20px;
+    }
+
+    /* 5. Flexbox and Grid */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* 6. Typography */
+    .typography {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* 7. Backgrounds and Borders */
+    .background-box {
+      background-color: lightblue;
+      border: 1px dashed gray;
+      background-image: linear-gradient(to right, #fff, #cce);
+    }
+
+    /* 8. Transitions and Animations */
+    .transition-box {
+      transition: background-color 0.3s ease;
+    }
+    .transition-box:hover {
+      background-color: darkblue;
+      color: white;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fade {
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* 9. Media Queries */
+    @media (max-width: 600px) {
+      .responsive {
+        flex-direction: column;
+      }
+    }
+
+    /* 10. Pseudo-classes and Pseudo-elements */
+    a:hover {
+      color: red;
+    }
+    p::first-line {
+      font-weight: bold;
+    }
+
+    /* 11. Z-index */
+    .modal {
+      position: absolute;
+      z-index: 1000;
+    }
+
+    /* 12. Specificity and Inheritance */
+    div p.highlight {
+      color: green;
+    }
+    body {
+      font-family: Verdana;
+    }
+
+    /* 13. CSS Variables */
+    :root {
+      --main-color: #3498db;
+    }
+    .var-box {
+      background-color: var(--main-color);
+      color: white;
+      padding: 10px;
+    }
+
+    /* 14. CSS Functions */
+    .calc-box {
+      width: calc(100% - 40px);
+      margin-left: var(--spacing, 10px);
+    }
+
+    /* 15. Best Practices */
+    /* Header styles using BEM */
+    .header {
+      background-color: #fff;
+      padding: 20px;
+    }
+    .header__logo {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header__logo">CSS Concepts Demo</div>
+  </div>
+
+  <p>This paragraph uses basic CSS syntax and selector.</p>
+
+  <div class="color-units">Color and Units example</div>
+
+  <div class="box-model">Box Model example</div>
+
+  <div class="relative-box">Relative Positioning</div>
+
+  <div class="flex-container responsive">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+  </div>
+
+  <div class="grid-container">
+    <div>Grid Item 1</div>
+    <div>Grid Item 2</div>
+  </div>
+
+  <div class="typography">This is centered typography with spacing</div>
+
+  <div class="background-box">Background and Borders</div>
+
+  <div class="transition-box">Hover me for transition</div>
+
+  <div class="fade">Fade In Animation</div>
+
+  <a href="#">Hover over this link</a>
+
+  <p>This paragraph uses <span class="highlight">pseudo-element</span> styling.</p>
+
+  <div class="modal">Modal with z-index</div>
+
+  <div class="var-box">Using CSS Variable</div>
+
+  <div class="calc-box">Width using calc()</div>
+</body>
+</html>
