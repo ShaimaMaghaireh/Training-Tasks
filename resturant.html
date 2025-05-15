@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grill BBQ</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: url('https://t4.ftcdn.net/jpg/11/09/66/53/360_F_1109665327_DrH05q4zr78sVMVxjpm0zsBrT6I7XfES.jpg') no-repeat center center/cover;
+      height: 500px;
+      position: relative;
+      
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+     
+    }
+
+    .logo {
+      color: #c62c2c;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: red;
+    }
+
+    .hero {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .signature-dishes {
+      background-color: #f4a261;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .signature-dishes h2 {
+      margin-bottom: 20px;
+    }
+
+    .signature-dishes p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .dishes-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .dish {
+      background: white;
+      padding: 15px;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    .dish img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .offers {
+      background-color: #fefae0;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .offers-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .offer {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">grill</div>
+      <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hero">
+      <h1>BEST BBQ!</h1>
+      <p>Get The Best Tasty Food</p>
+    </div>
+  </header>
+
+  <section class="signature-dishes">
+    <h2>SIGNATURE DISHES</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos porro consequatur aliquam, incidunt eius magni provident.</p>
+    <div class="dishes-container">
+      <div class="dish">
+        <img src="https://www.fitlivingeats.com/wp-content/uploads/2019/04/mexican-cobb-salad-featured-recipe-FitLiving-Eats-by-Carly-Paige.jpg" alt="Cobb Salad">
+        <h3>Cobb Salad</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos porro consequatur.</p>
+      </div>
+      <div class="dish">
+        <img src="https://kitchenatics.com/wp-content/uploads/2020/03/Chicken-and-pork-bbq.jpg" alt="Twinkies">
+        <h3>Twinkies</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos porro consequatur.</p>
+      </div>
+      <div class="dish">
+        <img src="https://static01.nyt.com/images/2023/03/01/multimedia/01BEEF-STEWrex2-pot-roast-bqjl/01BEEF-STEWrex2-pot-roast-bqjl-superJumbo.jpg" alt="Pot roast">
+        <h3>Pot roast</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos porro consequatur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers">
+    <h2>WE OFFER</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos porro consequatur aliquam, incidunt eius magni provident.</p>
+    <div class="offers-container">
+      <div class="offer">
+        <h3>Coffee</h3>
+        <p>There's nothing like a good cup of coffee to get you going in the morning.</p>
+      </div>
+      <div class="offer">
+        <h3>Breakfast</h3>
+        <p>Savoring the flavors of breakfast, one bite at a time.</p>
+      </div>
+      <div class="offer">
+        <h3>Lunch</h3>
+        <p>"Lunchtime: a moment of quiet reflection amidst the hustle."</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
