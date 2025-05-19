@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- JS bootstrap -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css"> 
+
+    <style>
+    .box { height: 100px; margin: 5px; }
+    .gray { background-color: gray; height: 30px; }
+    .blue { background-color: blue; }
+    .yellow { background-color: yellow; }
+    .lightblue { background-color: lightblue; }
+    .orange { background-color: orange; }
+
+     .bg-light-red { background-color: #f4cccc !important; }
+    .bg-light-yellow { background-color: #fff2cc !important; }
+    .bg-light-blue { background-color: #cfe2f3 !important; }
+
+    .uniform-img {
+    height: 300px;         /* or any height you prefer */
+    width: 100%;           /* makes image fill the column */
+    object-fit: cover;     /* crops and maintains aspect ratio */
+  }
+  </style>
+</head>
+<body>
+
+   <div class="container text-center mt-3">
+  
+  <!-- Top gray bar -->
+  <div class="gray mb-3"></div>
+
+  <!-- First row -->
+  <div class="row">
+    <div class="col-md-8">
+      <div class="box blue"></div>
+    </div>
+    <div class="col-md-4">
+      <div class="box lightblue"></div>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box yellow"></div>
+    </div>
+    <div class="col-md-4">
+      <div class="box yellow"></div>
+    </div>
+    <div class="col-md-4">
+      <div class="box yellow"></div>
+    </div>
+  </div>
+
+  <!-- Third row -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box lightblue"></div>
+    </div>
+    <div class="col-md-8">
+      <div class="box blue"></div>
+    </div>
+  </div>
+
+  <!-- Fourth row -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box orange"></div>
+    </div>
+    <div class="col-md-3">
+      <div class="box orange"></div>
+    </div>
+    <div class="col-md-3">
+      <div class="box orange"></div>
+    </div>
+    <div class="col-md-3">
+      <div class="box orange"></div>
+    </div>
+  </div>
+
+  <!-- Bottom gray bar -->
+  <div class="gray mt-3"></div>
+
+</div>
+
+
+<div class="container mt-5">
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bg-light-red">John</td>
+        <td class="bg-light-red">Doe</td>
+        <td class="bg-light-red">0777777777</td>
+        <td class="bg-light-red">john@example.com</td>
+      </tr>
+      <tr>
+        <td class="bg-light-yellow">Mary</td>
+        <td class="bg-light-yellow">Moe</td>
+        <td class="bg-light-yellow">0777777777</td>
+        <td class="bg-light-yellow">mary@example.com</td>
+      </tr>
+      <tr>
+        <td class="bg-light-blue">July</td>
+        <td class="bg-light-blue">Dooley</td>
+        <td class="bg-light-blue">0777777777</td>
+        <td class="bg-light-blue">july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-5">
+
+  <!-- Full-width buttons -->
+  <button class="btn btn-danger btn-lg w-100 mb-2">Button</button>
+  <button class="btn btn-warning btn-lg w-100 mb-2">Button</button>
+  <button class="btn btn-success btn-lg w-100 mb-2">Button</button>
+
+  <hr>
+
+  <!-- Inline buttons -->
+  <button class="btn btn-danger btn-lg me-2">Button</button>
+  <button class="btn btn-warning btn-md me-2">Button</button>
+  <button class="btn btn-success btn-sm me-2">Button</button>
+  <button class="btn btn-secondary btn-sm">Button</button>
+
+</div>
+
+
+
+<div class="container mt-4">
+  <div class="row g-3">
+    <!-- Row 1 -->
+    <div class="col-md-4">
+      <img src="https://img.freepik.com/free-photo/colorful-majestic-waterfall-national-park-forest-autumn_554837-6.jpg?semt=ais_hybrid&w=740" class="img-fluid uniform-img" alt="Image 1">
+    </div>
+    <div class="col-md-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnMVTv0j0SVGZtdxSAh2aulvySNcgLHoqwg&s" class="img-fluid uniform-img" alt="Image 2">
+    </div>
+    <div class="col-md-4">
+      <img src="https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg" class="img-fluid uniform-img" alt="Image 3">
+    </div>
+
+    <!-- Row 2 -->
+    <div class="col-md-4">
+      <img src="https://thumbs.dreamstime.com/b/nature-forest-trees-growing-to-upward-to-sun-wallpaper-42907586.jpg" class="img-fluid uniform-img" alt="Image 4">
+    </div>
+    <div class="col-md-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vbE6O27KMekexBLwX6LRSiKb75pN9lPiTQ&s" class="img-fluid uniform-img" alt="Image 5">
+    </div>
+    <div class="col-md-4">
+      <img src="https://jooinn.com/images/colors-of-nature-79.jpg" class="img-fluid uniform-img" alt="Image 6">
+    </div>
+
+    <!-- Row 3 -->
+    <div class="col-md-4">
+      <img src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2022/04/image27-1.png" class="img-fluid uniform-img" alt="Image 7">
+    </div>
+    <div class="col-md-4">
+      <img src="https://www.travelandleisure.com/thmb/Z6XGwXju9LHti6QeGeRG2iz7BTk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/japan-BEAUTCONT1021-7d58a9021f7e42fba9ca617ad668fc81.jpg"
+       class="img-fluid uniform-img" alt="Image 8">
+    </div>
+   
+  </div>
+</div>
+    <!-- JS bootstrap -->
+<script src="assets/js/bootstrap.bundle.min.js"> </script>
+    <!-- JS -->
+     <script src="assets/js/main.js"> </script>
+
+      <!-- JS bootstrap -->
+
+</body>
+</html>
